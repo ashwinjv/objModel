@@ -92,3 +92,6 @@ ENV/
 
 # VS Code settings folder
 .vscode
+
+#slide deck
+slides/current
