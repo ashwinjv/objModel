@@ -5,7 +5,7 @@ import math
 
 def print_oc_wind_vectors():
     try:
-        db = MySQLdb.connect(host="localhost",    
+        conn = MySQLdb.connect(host="localhost",    
                             user="admin",         
                             passwd="password",  
                             db="wind") 
@@ -14,10 +14,10 @@ def print_oc_wind_vectors():
         return None
 
     try:
-        cur = db.cursor()
+        cur = conn.cursor()
     except MySQLdb.Error:
         logging.error('Unable to get database cursor')
-        db.close()
+        conn.close()
         return None
 
     try:
@@ -29,10 +29,10 @@ def print_oc_wind_vectors():
             v_comp = row[1]
             print('u_comp:', u_comp)
             print('v_comp', v_comp)
-            print('magnitude:', math.sqrt(u_comp^2, v_comp^2))
+            print('magnitude:', math.sqrt(u_comp * u_comp, v_comp * v_comp))
             print('angle:', math.atan2(v_comp, u_comp))
     except MySQLdb.Error:
         logging.error('Unable to get wind component rows')
     finally:
         cur.close()
-        db.close()
+        conn.close()
