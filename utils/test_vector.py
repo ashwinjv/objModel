@@ -7,6 +7,19 @@ from .vector import Vector
 def wind_vector():
     return Vector([3, 4])
 
+
+def test_get_u(wind_vector):
+    assert wind_vector.u == 3, \
+        'should have an attribute of u, equal to 2'
+
+def test_get_v(wind_vector):
+    assert wind_vector.v == 4, \
+        'should have an attribute of v, equal to 3'
+
+def test_angle(wind_vector):
+    assert round(wind_vector.angle, 4) == 0.9273, \
+        'should calculate angle of the vector'
+        
 def test_length_of_vector(wind_vector):
     assert len(wind_vector) == 2, 'length of the wind_vector should be 2'
 
@@ -62,18 +75,7 @@ def test_getitems_by_index(wind_vector):
     assert wind_vector[0] == 3, \
         'should get items by index'
 
-def test_get_u(wind_vector):
-    assert wind_vector.u == 3, \
-        'should have an attribute of u, equal to 2'
-
-def test_get_v(wind_vector):
-    assert wind_vector.v == 4, \
-        'should have an attribute of v, equal to 3'
-
 def test_get_by_name(wind_vector):
     assert wind_vector['u'] == 3, \
         'should get items by key' 
-
-def test_angle(wind_vector):
-    assert round(wind_vector.angle, 4) == 0.9273, \
-        'should calculate angle of the vector'
+        
