@@ -1,0 +1,40 @@
+###############################################################################
+
+
+                               Operators
+                               
+                                __eq__
+
+                      Implements the equals operator
+                      Usage: ''' wind_vector == Vector(3, 4) '''
+
+                                __add__
+
+                      Implements the add operator
+                      Usage: ''' wind_vector + Vector(3, 4) '''
+
+                                __sub__
+
+                      Implements the subtract operator
+                      Usage: ''' wind_vector - Vector(3, 4) '''
+
+                                __mul__
+
+                      Implements the multiply operator
+                      Usage: ''' wind_vector * 2 '''
+
+                                __rmul__
+
+                      Implements the right multiply operator
+                      Usage: ''' 2 * wind_vector '''
+
+                                __abs__
+
+                      Implements the absolute operator
+                      Usage: ''' abs(wind_vector) '''
+
+
+
+
+8
+###############################################################################

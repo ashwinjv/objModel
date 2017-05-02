@@ -1,0 +1,40 @@
+###############################################################################
+
+
+
+
+                                with statement
+
+                  Usage:
+                  '''
+                    with open('filename') as f:
+                        print(f)
+                  '''
+
+                  uses __enter__ and __exit__ functions
+
+                  when entering the with block, __enter__ function is called
+                  when exiting the with block, __exit__function is called
+
+                  the exit function is called with exception info, if there
+                  was any exception when execting code inside the with block
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+11
+###############################################################################

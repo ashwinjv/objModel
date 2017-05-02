@@ -1,0 +1,40 @@
+###############################################################################
+
+
+
+                                __len__
+
+                  Implements the functionality of len()
+                  Provides the length of the object
+                  Usage: ''' len(wind_vector) '''
+
+                                __str__
+
+                  Implements the functionality of str()
+                  Provides the string representaions of the object
+                  Usage: ''' str(wind_vector) '''
+
+                                __repr__
+
+                  Implements the functionality of repr()
+                  Provides the debug repr of the object
+                  Usage: ''' repr(wind_vector) '''
+
+                                __iter__
+
+                  Implements the functionality of iter()
+                  Provides the ability to iterate with the object
+                  Allows you to use them in for loops
+                  Usage: ''' for vector in wind_vector: '''
+
+
+
+
+
+
+
+
+
+
+7
+###############################################################################

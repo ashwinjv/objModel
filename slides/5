@@ -1,0 +1,42 @@
+###############################################################################
+##
+## Python Object Model
+##
+###############################################################################
+
+ - Common interface to common functions
+    JAVA:
+        array.length
+        string.length()
+    PYTHON:
+        len(array)
+        len(string)
+
+ - Cleaner API
+
+ - All Classes in python inherit from Object. They already have a builtin 
+   implemetations.
+
+ - The interface is implemented using functions that start with __ and end with
+   __. Hence the name dunder functions. They are also known as magic functions
+   because of all the "Magic"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5
+###############################################################################

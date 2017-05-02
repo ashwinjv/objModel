@@ -1,0 +1,40 @@
+###############################################################################
+
+
+
+                                __getitem__
+
+                  Implements the functionality of getting items
+
+                  Items can be got by index
+                  Usage: ''' wind_vector[0] '''
+
+                  Items can be got by key
+                  Usage: ''' wind_vector['u'] '''
+
+                  Items can be got by slice
+                  Usage: ''' wind_vector[:1] '''
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+9
+###############################################################################
