@@ -1,0 +1,12 @@
+#!/bin/bash
+
+SLIDE_DIR=$(dirname "$0")/../slides
+CURRENT=$(cat $SLIDE_DIR/current)
+PREV=$(($CURRENT - 1))
+
+clear
+
+cat $SLIDE_DIR/$PREV
+echo ""
+echo ""
+echo $PREV > $SLIDE_DIR/current
