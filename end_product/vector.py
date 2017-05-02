@@ -33,18 +33,18 @@ class Vector:
 
     def __add__(self, other):
         if len(self) != len(other):
-            return NotImplemented
+            raise NotImplemented
         return Vector([i + j for i, j in zip(self, other)])
 
     def __sub__(self, other):
         if len(self) != len(other):
-            return NotImplemented
+            raise NotImplemented
         return Vector([i - j for i, j in zip(self, other)])
 
     def __mul__(self, number):
         if not isinstance(number, numbers.Real):
             print('not a real number')
-            return NotImplemented
+            raise NotImplemented
         return Vector([number * i for i in self])
 
     def __rmul__(self, number):
