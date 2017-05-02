@@ -1,0 +1,6 @@
+alias n="cmds/next"
+alias p="cmds/prev"
+alias c="cmds/current"
+alias s="cmds/start"
+alias g="cmds/go"
+alias t="pytest -xv"

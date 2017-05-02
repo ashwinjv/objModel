@@ -5,6 +5,8 @@ CURRENT=0
 
 clear
 
+echo ""
+echo ""
 cat $SLIDE_DIR/$CURRENT
 echo ""
 echo ""

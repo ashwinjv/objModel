@@ -6,6 +6,8 @@ NEXT=$(($CURRENT + 1))
 
 clear
 
+echo ""
+echo ""
 cat $SLIDE_DIR/$NEXT
 echo ""
 echo ""
